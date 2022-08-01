@@ -36,3 +36,17 @@ def convert_list_to_dict(list_of_dict: list, key: str):
         dict_[key_name] = item
 
     return dict_
+
+
+def dictionary_from_list(list_of_dict: list, key: str, value: str):
+
+    dict_ = {}
+    duplicates_counter = 0
+    for item in list_of_dict:
+        key_name = item[key]
+        if key_name in dict_:
+            key_name = f"{key_name}_{duplicates_counter}"
+            duplicates_counter += 1
+        dict_[key_name] = item[value]
+
+    return dict_
