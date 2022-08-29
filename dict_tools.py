@@ -1,7 +1,8 @@
 import json
 
 
-def get_keys(dict_: dict, keys: list):
+def get_keys(dict_: dict, keys: list) -> dict:
+    """In ATP Things"""
     return {key: dict_[key] for key in dict_.keys() & keys}
 
 
