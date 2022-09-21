@@ -6,6 +6,10 @@ def get_keys(dict_: dict, keys: list) -> dict:
     return {key: dict_[key] for key in dict_.keys() & keys}
 
 
+def get_key_list(dict_: dict) -> list:
+    return [key for key in dict_.keys()]
+
+
 def load(path: str) -> dict:
     with open(path) as file_:
         ret = dict(json.load(file_))
