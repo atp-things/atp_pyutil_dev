@@ -1,0 +1,11 @@
+{
+  "python.formatting.provider": "black",
+  "python.linting.flake8Enabled": true,
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+  "python.terminal.activateEnvironment": true,
+  "environment_variables": {
+    "PIPENV_VENV_IN_PROJECT": 1
+  },
+  // "python.terminal.activateEnvInCurrentTerminal": true,
+  "jupyter.jupyterServerType": "local",
+}

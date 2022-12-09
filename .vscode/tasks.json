@@ -1,0 +1,52 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    // Pipenv
+    {
+      "label": "Python - version",
+      "type": "shell",
+      "command": "python -v"
+    },
+    {
+      "label": "Pipenv - instal packages",
+      "type": "shell",
+      "command": "pipenv install"
+    },
+    {
+      "label": "Pipenv - activate venv",
+      "type": "shell",
+      "command": "pipenv shell"
+    },
+    {
+      "label": "Pipenv - run command",
+      "type": "shell",
+      "command": "pipenv run <command>"
+    },
+    // Linting and Formatting
+    {
+      "label": "lintFlake8",
+      "type": "shell",
+      "command": "flake8"
+    },
+    {
+      "label": "formatBlack",
+      "type": "shell",
+      "command": "black ."
+    },
+    // Git - pre-commit
+    {
+      "label": "preCommit - install",
+      "detail": "Install pre-commit hooks from .pre-commit-config.yaml to .git hooks.",
+      "type": "shell",
+      "command": "pre-commit install"
+    },
+    {
+      "label": "preCommit - run all",
+      "detail": "Run pre-commit hooks described in .pre-commit-config.yaml",
+      "type": "shell",
+      "command": "pre-commit run --all-files"
+    }
+  ]
+}

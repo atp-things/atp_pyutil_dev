@@ -1,8 +1,6 @@
 # %%
 import pandas as pd
 
-import numpy as np
-import json
 from pprintpp import pprint as pp
 from IPython.display import display
 
@@ -46,6 +44,3 @@ dict_ = [
 
 print("List:", dict_tools.get_values_from_list(dict_, key="uuid"))
 print("Unique:", dict_tools.get_values_from_list(dict_, key="uuid", unique=True))
-
-
-# %%
