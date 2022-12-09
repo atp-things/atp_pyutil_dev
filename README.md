@@ -1,2 +1,3 @@
-# atp_pyutil_dev
-Python utilities dev
+# ATP Python utilities - development
+
+pipenv install scikit-learn pymongo pymysql
